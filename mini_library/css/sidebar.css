@@ -1,0 +1,48 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 230px;
+  background: #970c10;
+  color: #fff;
+  padding-top: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.sidebar h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+  font-size: 15px;
+}
+
+.sidebar a:hover {
+  background: #b11c21;
+  transform: translateY(-3px);
+}
+
+.sidebar h6 {
+  margin-top: 140%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 13px;
+  color: #ffeaea;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 30px;
+}

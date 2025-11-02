@@ -1,0 +1,160 @@
+/* PAGE BACKGROUND */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #fae1e1ff;
+  margin: 0;
+  padding: 0;
+}
+/* MAIN CONTENT AREA */
+.content {
+  margin-left: 250px; /* aligns with sidebar width */
+  padding: 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* TITLE */
+.content h2 {
+  color: #090101;
+  margin-bottom: 20px;
+}
+
+/* WRAPPER FOR TWO CARDS */
+.main-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD STYLE */
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  min-width: 350px;
+}
+
+/* FORM STYLING */
+.user-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.user-form input,
+.user-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+.user-form input:focus,
+.user-form select:focus {
+  border-color: #1e00df;
+  box-shadow: 0 0 5px rgba(151, 12, 16, 0.3);
+}
+.user-form button {
+  grid-column: span 2;
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.user-form button:hover {
+  background: #000000;
+}
+
+/* USER LIST HEADER */
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.user-header input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 220px;
+  outline: none;
+  transition: 0.3s;
+}
+.user-header input:focus {
+  border-color: #1e00df;
+  box-shadow: 0 0 5px rgba(151, 12, 16, 0.3);
+}
+
+/* TABLE STYLES */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+thead {
+  background: #f8bbd0;
+}
+thead th {
+  padding: 12px;
+  text-align: left;
+}
+tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+tbody tr:hover {
+  background: #fff0f5;
+}
+
+/* EMPTY STATE */
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+/* ROLE BADGES */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: white;
+}
+.badge.admin {
+  background: #e53935;
+}
+.badge.user {
+  background: #757575;
+}
+
+/* DELETE BUTTON */
+.btn-delete {
+  color: white;
+  background: #892726;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-delete:hover {
+  background: #e02626;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .main-wrapper {
+    flex-direction: column;
+  }
+}
